@@ -72,10 +72,3 @@ The SPV1050 is an ultra-low power and high-efficiency power manager embedding fo
 <p align="center">
   <img src="https://dwgan.top/PicGo/img/image-20240924145737780.png" style="zoom: 50%;" />
 </p>
-
-
-
-## How to manage files on computer
-
-[Learn more]({{ site.baseurl }}{% post_url 2024-06-29-How-to-manage-files-on-computer %})
-

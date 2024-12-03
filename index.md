@@ -72,3 +72,17 @@ The SPV1050 is an ultra-low power and high-efficiency power manager embedding fo
 <p align="center">
   <img src="https://dwgan.top/PicGo/img/image-20240924145737780.png" style="zoom: 50%;" />
 </p>
+
+
+
+
+<details>
+  <summary>点击展开/折叠</summary>
+
+  这是被折叠的内容。你可以在这里添加任何你想要折叠的文本、图片、链接等。
+
+  - 这是一项列表
+  - 这里是另一项
+  - 还有更多内容...
+
+</details>

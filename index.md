@@ -3,6 +3,16 @@ layout: default
 title: Home
 ---
 
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241204142434558.png" style="zoom: 18%; float: left; margin-right: 10px;" />
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241204142502018.png" style="zoom: 18%; float: right;" />
+</p>
+
+
+
+
+
+
 Hi there, welcome to the technical zone of **Automation Competence Center**, belonging to **STMicroelectronics**. Our work mainly focus on **smart industrial** and **smart home, building automation**. 
 
 Our mission is design more system solution for customers using our ST's products including but not limits of MCU, MPU, wireless connectivity, converter, sensor, and etc.

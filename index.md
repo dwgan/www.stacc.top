@@ -77,7 +77,8 @@ The SPV1050 is an ultra-low power and high-efficiency power manager embedding fo
 
 
 <details>
-  <summary>点击展开/折叠</summary>
+  <summary><h1>点击展开/折叠<h1></summary>
+
 
   这是被折叠的内容。你可以在这里添加任何你想要折叠的文本、图片、链接等。
 

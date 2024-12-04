@@ -3,11 +3,9 @@ layout: default
 title: Home
 ---
 
-Hi there, welcome to the technical zone of Automation Competence Center, belonging to STMicroelectronics. Our work mainly focus on smart industrial, smart home, and smart building automation. 
+Hi there, welcome to the technical zone of **Automation Competence Center**, belonging to **STMicroelectronics**. Our work mainly focus on **smart industrial** and **smart home, building automation**. 
 
-# **Smart Industrial**
-
-Our mission is design more system solution for customers using our ST's products including MCUs (e.g. STM32 serials), converters (e.g. DC-DC, signal converter). One of serials that we recently focus on is STKNX. KNX is a international standard protocol in smart home automation field, which provides a full standard from physical layer to application layer. The full standard allow easy use without considering the compatibility of the products, realizing plug and play.
+Our mission is design more system solution for customers using our ST's products including but not limits of MCU, MPU, wireless connectivity, converter, sensor, and etc.
 
 Here are some topics that I recently focus on
 
@@ -23,6 +21,8 @@ In this project, we explored the advantage of STM32MPU to design powerful develo
 
 
 ## STKNX RFID Reader
+
+One of serials that we recently focus on is STKNX. KNX is a international standard protocol in smart home automation field, which provides a full standard from physical layer to application layer. The full standard allow easy use without considering the compatibility of the products, realizing plug and play.
 
 RFID is one of the most widely used radio frequency communication technologies today, playing an important role in areas such as payment and security. We aim to integrate it into smart industrial and smart home applications. Our team has provided a demo that showcases RFID communication and serves as a reference solution for smart industrial and smart home systems, primarily based on ST's microchips. [Learn more](https://github.com/dwgan/STKNX-RFID-Reader)
 
@@ -54,7 +54,7 @@ We introduce KNX into the system, which allow different EV charger from differen
 
 ## NAT Traversal
 
-In order to realize smart home / building automation, including remote control and data storage, we employ a Synology based data center. To realize remote data monitor, we need to explore data interface to Internet while keep safety of our data. We build our own NAT traversal server to provide the interface. [Learn more]({{ site.baseurl }}{% post_url 2024-06-26-How-to-enploy-NAT-traversa-on-Synology %})
+In order to realize smart home / building automation, including remote control and data storage, we employ a Synology based data center. To realize remote data monitor, we need to explore data interface to Internet while keep safety of our data. We build our own NAT traversal server to provide the interface. [Learn more]({{ site.baseurl }}{% post_url 2024-06-26-Synology-NAT %})
 
 <p align="center">
   <img src="https://dwgan.top/PicGo/img/202409210040470.png" style="zoom: 50%;" />
@@ -74,16 +74,3 @@ The SPV1050 is an ultra-low power and high-efficiency power manager embedding fo
 </p>
 
 
-
-
-<details>
-  <summary><h1>点击展开/折叠<h1></summary>
-
-
-  这是被折叠的内容。你可以在这里添加任何你想要折叠的文本、图片、链接等。
-
-  - 这是一项列表
-  - 这里是另一项
-  - 还有更多内容...
-
-</details>

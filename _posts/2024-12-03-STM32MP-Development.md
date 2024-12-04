@@ -4,9 +4,12 @@ title: "How-to-ping-from-vmware-to-host-using-ubuntur"
 date: 2024-06-29
 ---
 
+# STM32MPU Development
 
 
-# 使用VMware Uubntu虚拟机如何ping通宿主机
+
+
+## 使用VMware Uubntu虚拟机如何ping通宿主机
 
 要使用VMware Ubuntu虚拟机和主机通信，需要保证两者在同一个局域网下。
 
@@ -37,4 +40,3 @@ date: 2024-06-29
 <p align="center">
   <img src="https://dwgan.top/PicGo/img/image-20241203163743132.png" style="zoom: 33%;" />
 </p>
-

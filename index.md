@@ -20,13 +20,14 @@ Our mission is design more system solution for customers using our ST's products
 
 Here are some topics that I recently focus on
 
-## STM32MP1
+## STM32MPU
 
-In this project, we explored the advantage of STM32MPU to design powerful development platform with lower price. The STM32MP157 is a heterogeneous system architecture with an A7 core and an M4 core. The A7 core can run a Linux system and execute high-performance tasks such as human-machine interfaces (HMI), video encoding/decoding, and providing USB and Ethernet interfaces. The M4 core can run real-time tasks such as motor control and sensor data acquisition. [Learn more](https://www.st.com/en/microcontrollers-microprocessors/stm32-arm-cortex-mpus.html)
+In this project, we explored the advantage of STM32MPU to design powerful development platform with lower price. The STM32MP157 is a heterogeneous system architecture with an A7 core and an M4 core. The A7 core can run a Linux system and execute high-performance tasks such as human-machine interfaces (HMI), video encoding/decoding, and providing USB and Ethernet interfaces. The M4 core can run real-time tasks such as motor control and sensor data acquisition. [Learn more]({{ site.baseurl }}{% post_url 2024-12-03-STM32MP-Development %})
 
 <p align="center">
   <img src="https://dwgan.top/PicGo/img/202409210037469.png" style="zoom: 33%;" />
 </p>
+
 
 
 ## STKNX RFID Reader

@@ -5,14 +5,10 @@ title: Home
 
 <p align="center" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
   <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241204142434558.png" style="zoom: 10%;" />
-  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241204144324126.png" style="zoom:15%;" />
-  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/io-link-tech.png" style="zoom:12%;" />
-  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/Subbrand%20STM32.svg" style="zoom: 15%;" />
-  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/Subbrand_White_STWLC.svg" style="zoom: 18%;" />
-  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/Subbrand_White_ST25.svg" style="zoom: 18%;" />
   <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241204142502018.png" style="zoom: 11%;" />
   <div style="clear: both;"></div>
 </p>
+
 
 Hi there, welcome to the technical zone of **Automation Competence Center**, belonging to **STMicroelectronics**. Our work mainly focus on **smart industrial** and **smart home, building automation**. Our mission is design more system solution for customers using our ST's products including but not limits of MCU, MPU, wireless connectivity, converter, sensor, and etc.
 

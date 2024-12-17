@@ -1,3 +1,11 @@
+---
+layout: single
+title: "README"
+permalink: /README/
+toc: true
+toc_sticky: true
+---
+
 ## How to use
 
 1. Clone this repository to local folder

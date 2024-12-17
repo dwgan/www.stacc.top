@@ -1,14 +1,12 @@
 ---
 layout: single
-title: "README"
+title: "How to use"
 permalink: /README/
 toc: true
 toc_sticky: true
 ---
 
-## How to use
-
-1. Clone this repository to local folder
+## 一、克隆仓库到本地
 
    ```shell
    git clone git@github.com:dwgan/www.stacc.top.git
@@ -20,29 +18,11 @@ toc_sticky: true
    git pull
    ```
 
-2. Edit `.md` file as your need.
+## 二、修改对应文件
 
-3. Add modified file to local 
+You can build the website on local machine or push them to Github directly if you are sure of no gramma error.
 
-   ```shell
-   git add .
-   ```
-
-4. Commit to local repository
-
-   ```shell
-   git commit -m 'descrip what have been modified'
-   ```
-
-5. Push to remote repository and build automatically.
-
-   ```shell
-   git push origin main
-   ```
-
-   
-## How to build website on local machine
-
+<details><summary>点这里查看如何在本地编译网站</summary>
 
 ### 1. 安装 Ruby 环境
 
@@ -88,14 +68,30 @@ bundle exec jekyll serve
 
 网站将在 `http://localhost:4000` 上运行。
 
-### 6. 编辑和定制网站
+</details>
 
-- 配置文件：修改 `_config.yml` 来定制网站的基本信息。
-- 页面内容：编辑 `_pages/` 中的页面，修改 `index.md` 来更新首页内容。
-- 部署：完成修改后，可以将代码推送到 GitHub，并通过 GitHub Pages 部署你的站点。
+## 三、删除本地多余文件
 
-### 注意事项
+   ```
+   rm -r _site
+   ```
 
-- Windows 系统上可能遇到一些兼容性问题，特别是在使用 Ruby 的扩展库时。如果遇到问题，可以考虑使用 Windows Subsystem for Linux (WSL)，它提供了一个更接近 Linux 的环境，有时能更顺畅地运行 Jekyll。
+## 四、添加到本地暂存区
 
-希望这些步骤能帮助你在 Windows 上成功启动并运行 **Minimal Mistakes** 主题！
+   ```shell
+   git add .
+   ```
+
+## 五、提交到本地仓库
+
+   ```shell
+   git commit -m 'descrip what have been modified'
+   ```
+
+## 六、推送到远程仓库
+
+   ```shell
+   git push origin main
+   ```
+
+## 七、等待远程仓库编译约1分钟，到网站查看更改

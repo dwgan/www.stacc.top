@@ -51,7 +51,8 @@ reCaptcha:
   secret                 : # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
 
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  hide: true
+  # path                   : # blank (default) uses feed.xml
 
 search                   : false # true, false (default)
 search_full_content      : false # true, false (default)

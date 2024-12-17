@@ -16,7 +16,7 @@ Here are some topics that we recently focus on
 
 [How-to-ping-from-vmware-to-host-using-ubuntu](/posts/how-to-ping-from-vmware-to-host-using-ubuntu/)
 
-
+[CODESYS移植记录](/posts/CODESYS移植记录/)
 
 # Smart Home
 

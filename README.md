@@ -63,7 +63,7 @@ bundle install
 安装完依赖后，你可以使用以下命令启动本地服务器：
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 ```
 
 网站将在 `http://localhost:4000` 上运行。

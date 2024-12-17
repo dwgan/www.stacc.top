@@ -49,8 +49,8 @@ docs:
         url: /posts/stm32mp-development/
       - title: "How-to-ping-from-vmware-to-host-using-ubuntu"
         url: /posts/how-to-ping-from-vmware-to-host-using-ubuntu/
-      - title: "ÈçºÎÒÆÖ²CODESYS"
-        url: /posts/CODESYSÒÆÖ²¼ÇÂ¼/
+      - title: "CODESYS"
+        url: /posts/CODESYS/
 
   - title: "Smart Home"
     children:

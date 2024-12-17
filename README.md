@@ -1,11 +1,3 @@
----
-layout: single
-title: "How to use"
-permalink: /README/
-toc: true
-toc_sticky: true
----
-
 ## 一、克隆仓库到本地
 
    ```shell

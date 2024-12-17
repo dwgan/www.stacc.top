@@ -10,7 +10,7 @@ remote_theme             : "mmistakes/minimal-mistakes@master"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 title                    : "Automation Competence Center"
 title_separator          : "-"
 subtitle                 : "Technical Zone"

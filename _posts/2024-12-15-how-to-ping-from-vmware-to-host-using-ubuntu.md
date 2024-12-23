@@ -67,7 +67,7 @@ toc: true
 
 在命令行中查看当前ip，如果出现分配的IPV4地址说明设置成功
 
-```
+```shell
 acc@acc-virtual-machine:~$ ifconfig
 ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.137.2  netmask 255.255.255.0  broadcast 192.168.137.255
@@ -94,7 +94,7 @@ acc@acc-virtual-machine:~$
 
 在STM32MP开发板中设置ip地址，我这里使用的是NetworkManger
 
-```
+```shell
 nmcli connection modify eth0 ipv4.addresses 192.168.137.3/24
 nmcli connection modify eth0 ipv4.gateway 192.168.137.1
 nmcli connection modify eth0 ipv4.dns "8.8.8.8 8.8.4.4"
@@ -103,7 +103,7 @@ nmcli connection modify eth0 ipv4.method manual
 
 查看一下网络状态
 
-```
+```shell
 root@ccmp15-dvk:~# ifconfig
 eth0      Link encap:Ethernet  HWaddr 00:04:F3:4E:14:24
           inet addr:192.168.137.3  Bcast:192.168.137.255  Mask:255.255.255.0
@@ -136,7 +136,7 @@ wlan0     Link encap:Ethernet  HWaddr 00:04:F3:4E:14:25
 
 尝试从STM32MP开发板中ping一下Windows主机、Ubuntu虚拟机以及百度
 
-```
+```shell
 
 root@ccmp15-dvk:~# ping 192.168.137.1
 PING 192.168.137.1 (192.168.137.1): 56 data bytes
@@ -176,7 +176,7 @@ root@ccmp15-dvk:~#
 
 从Ubuntu虚拟机中ping一下Windows主机、STM32MP开发板以及百度
 
-```
+```shell
 acc@acc-virtual-machine:~$ ping 192.168.137.1
 PING 192.168.137.1 (192.168.137.1) 56(84) bytes of data.
 64 bytes from 192.168.137.1: icmp_seq=1 ttl=128 time=0.993 ms

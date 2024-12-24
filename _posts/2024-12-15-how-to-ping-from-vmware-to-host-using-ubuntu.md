@@ -16,36 +16,27 @@ toc: true
 ## 一、共享Wifi连接到以太网口
 首先共享WiFi连接到以太网口，在网络共享中心中选择可以上互联网的网络，点击属性->共享->勾选允许其他网络->选择以太网
 
-![alt text](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image.png)
-
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image.png" style="zoom: 100%;" />
+</p>
 
 
 可以看到以太网的ip变成了192.168.137.1
 
-![image-20241223115506355](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115506355.png)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115506355.png" style="zoom: 100%;" />
+</p>
 
 ## 二、将虚拟网络连接至以太网
 
 在VMware中打开虚拟网络编辑。通常，VMware通过VMnet0与宿主机连接。在VMware中选择Edit->Virtual Network Editor->Change Settings->VMnet0->Bridged to
 
-![image-20241223115617138](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115617138.png)
-
-
-
 <p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115617138.png" style="zoom: 100%;" />
   <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241203162302053.png" style="zoom: 100%;" />
-</p>
-<p align="center">
   <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115824726.png" style="zoom: 100%;" />
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241203162410872.png" style="zoom: 100%;" />
 </p>
-
-
-
-
-![](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241203162302053.png)
-
-![](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241203162410872.png)
-
 
 
 ## 三、编辑虚拟机网络连接
@@ -57,13 +48,15 @@ toc: true
 </p>
 编辑虚拟机网络连接，选择用户自定义->VMnet0
 
-
-
-![image-20241223120249069](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223120249069.png)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223120249069.png" style="zoom: 100%;" />
+</p>
 
 ## 四、在Ubuntu中连接网络
 
-![image-20241223133625629](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223133625629.png)
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223133625629.png" style="zoom: 100%;" />
+</p>
 
 在命令行中查看当前ip，如果出现分配的IPV4地址说明设置成功
 
@@ -218,4 +211,7 @@ acc@acc-virtual-machine:~$
 
 若出现无法ping通主机的情况，尝试关闭Windows的公共网络下的防火墙试试
 
-![image-20241223125921720](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223125921720.png)
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223125921720.png" style="zoom: 100%;" />
+</p>

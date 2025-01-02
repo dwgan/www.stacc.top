@@ -51,7 +51,7 @@ dns_server = 114.114.114.114
 
 [DS923] # 隧道的标识，不能重复
 type = tcp
-local_ip = 192.168.0.199
+local_ip = 192.168.0.199 # 这里是群晖的局域网IP
 local_port = 5000
 remote_port = 25000
 use_encryption = true
@@ -59,7 +59,7 @@ use_compression = true
 
 [Home Assistant]
 type = tcp
-local_ip = 192.168.0.10
+local_ip = 192.168.0.10 # 这里是Home Assistant的局域网IP
 local_port = 8123
 remote_port = 28123
 use_encryption = true
@@ -74,9 +74,13 @@ use_compression = true
 
 ![image-20240729182700780](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20240729182700780.png)
 
-打开docker，搜索安装`frp`，我这里选择`0.50.0`这个版本，注意要和frps的版本匹配
+打开docker，搜索安装`frp`，我这里选择`snowdreamtech/frpc`的`0.50.0`这个版本，注意要和frps的版本匹配
 
 ![image-20240729182641515](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20240729182641515.png)
+
+如果出现“无法执行此操作，可能是因为网络链接不稳定或系统正忙。请稍后再试”的提示，说明网络有问题，可以手动导入，可通过[这里](https://github.com/fatedier/frp/releases)获取
+
+![image-20250102153029672](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20250102153029672.png)
 
 安装后启动它，在存储空间设置添加如下内容，将`file station`中的文件映射到docker容器中
 
@@ -85,6 +89,10 @@ use_compression = true
 启动docker，可以在frps管理界面看到已经连接上了
 
 ![image-20240729183305905](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20240729183305905.png)
+
+注意取消勾选`自动将DSM桌面的HTTP链接重定向到HTTPS`
+
+![image-20250102153715960](https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20250102153715960.png)
 
 尝试网页打开，已经可以连接上了
 

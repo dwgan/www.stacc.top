@@ -54,6 +54,8 @@ docs:
 
   - title: "Smart Home"
     children:
+      - title: "Local Speech Recognition"
+        url: /posts/automatic-speech-recognition/
       - title: "Synology NAT"
         url: /posts/synology-nat/
       - title: "STKNX Charging Station"

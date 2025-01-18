@@ -39,3 +39,7 @@ We are semiconductor company, so our mission is to sell more microchip. Our demo
 [资料下载-2024全球6G技术大会官网](https://www.g6gconference.com/index/Lists/index.html?id=9)
 
 [语义通信白皮书](https://www.g6gconference.com/upload/file/20240613171824685395.rar)
+
+Deep Learning Enabled Semantic Communications with Speech Recognition and Synthesis. [paper]([2205.04603](https://arxiv.org/pdf/2205.04603)), [code]([Zhenzi-Weng/DeepSC-ST_demonstration](https://github.com/Zhenzi-Weng/DeepSC-ST_demonstration?tab=readme-ov-file))
+
+[wenet-e2e/wenet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://github.com/wenet-e2e/wenet)

@@ -7,8 +7,6 @@ redirect_from:
 toc: true
 ---
 
-
-
 ## Background
 
 Automatic Speech Recognition (ASR) are more and more popular in smart home products. Nowadays, most of smart assistant are based on cloud model. It can be smart enough to answer user 's question.
@@ -35,3 +33,9 @@ This idea sounds so great. But why do we not seem those kind of product on the m
 What we are going to do is close the gap between the existing model and real application. We are going to build a demo using STM32MP2 to run a ASR system to show its capability.
 
 We are semiconductor company, so our mission is to sell more microchip. Our demo can make our consumer understand more about our product and use more our product in their design.  
+
+## Reference
+
+[资料下载-2024全球6G技术大会官网](https://www.g6gconference.com/index/Lists/index.html?id=9)
+
+[语义通信白皮书](https://www.g6gconference.com/upload/file/20240613171824685395.rar)

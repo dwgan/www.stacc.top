@@ -20,6 +20,8 @@ Here are some topics that we recently focus on
 
 # Smart Home
 
+[Local Automatic Speech Recognition Utilizing Edge AI for Smart Assistant](/posts/automatic-speech-recognition/)
+
 [STKNX RFID Reader](/posts/stknx-rfid-reader/)
 
 

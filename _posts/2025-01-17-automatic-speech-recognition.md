@@ -43,3 +43,5 @@ We are semiconductor company, so our mission is to sell more microchip. Our demo
 Deep Learning Enabled Semantic Communications with Speech Recognition and Synthesis. [paper]([2205.04603](https://arxiv.org/pdf/2205.04603)), [code]([Zhenzi-Weng/DeepSC-ST_demonstration](https://github.com/Zhenzi-Weng/DeepSC-ST_demonstration?tab=readme-ov-file))
 
 [wenet-e2e/wenet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://github.com/wenet-e2e/wenet)
+
+[Lisennlp/TinyBert: 简洁易用版TinyBert：基于Bert进行知识蒸馏的预训练语言模型](https://github.com/Lisennlp/TinyBert)

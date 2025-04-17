@@ -125,6 +125,47 @@ wlan0     Link encap:Ethernet  HWaddr 00:04:F3:4E:14:25
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 ```
 
+---
+
+如果`NetworkManger`不可用，可以使用`systemd-networkd`，打开`10-end0.network`文件，注意`end0`是网络的接口名字，可通过`ifconfig`获取
+
+```sh
+root@stm32mp2-e3-e0-f5:~# ifconfig
+end0      Link encap:Ethernet  HWaddr 10:E7:7A:E3:E0:F5
+          inet addr:192.168.20.200  Bcast:192.168.20.255  Mask:255.255.255.0
+          inet6 addr: fe80::12e7:7aff:fee3:e0f5/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:39 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:6912 (6.7 KiB)
+          Interrupt:61 Base address:0x8000
+```
+
+编辑配置文件
+
+```shell
+root@stm32mp2-e3-e0-f5:/etc/network# vi /etc/systemd/network/10-end0.network
+```
+
+填入以下内容
+
+```
+[Match]
+Name=end0
+
+[Network]
+Address=192.168.20.200/24
+netmask 255.255.255.0
+```
+
+重启网络管理器使之生效
+
+```
+systemctl restart systemd-networkd
+```
+
+
 ## 六、网络连接测试
 
 尝试从STM32MP开发板中ping一下Windows主机、Ubuntu虚拟机以及百度

@@ -156,12 +156,15 @@ Name=end0
 
 [Network]
 Address=192.168.20.200/24
-netmask 255.255.255.0
+Gateway=192.168.20.1
+DNS=223.5.5.5
+DNS=8.8.8.8
 ```
 
 重启网络管理器使之生效
 
 ```
+systemctl daemon-reload
 systemctl restart systemd-networkd
 ```
 

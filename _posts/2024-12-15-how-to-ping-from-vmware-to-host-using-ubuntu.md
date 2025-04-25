@@ -14,6 +14,7 @@ toc: true
 本教程以Vmware虚拟机软件为例，Linux系统采用Ubuntu22.04.5，以下是具体操作步骤：
 
 ## 一、共享Wifi连接到以太网口
+### Windows+Ubuntu虚拟机参考
 首先共享WiFi连接到以太网口，在网络共享中心中选择可以上互联网的网络，点击属性->共享->勾选允许其他网络->选择以太网
 
 <p align="center">
@@ -26,6 +27,66 @@ toc: true
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/dwgan/PicGo/img/image-20241223115506355.png" style="zoom: 100%;" />
 </p>
+
+### Ubuntu物理机参考
+
+通过以下步骤共享无线网络（wlp1s0）到有线网卡（eno1），并设置 eno1 的 IP 为 `192.168.20.1`：
+
+步骤 1：设置 eno1 的静态 IP
+```bash
+sudo ifconfig eno1 192.168.20.1 netmask 255.255.255.0 up
+```
+这会为 `eno1` 设置 IP `192.168.20.1`，子网掩码 `255.255.255.0`。
+
+步骤 2：启用 IP 转发
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+```
+这会临时启用 IPv4 转发（重启后失效）。
+
+步骤 3：配置 iptables NAT 规则
+```bash
+sudo iptables -t nat -A POSTROUTING -o wlp1s0 -j MASQUERADE
+sudo iptables -A FORWARD -i eno1 -o wlp1s0 -j ACCEPT
+sudo iptables -A FORWARD -i wlp1s0 -o eno1 -m state --state RELATED,ESTABLISHED -j ACCEPT
+```
+这些规则会：
+1. 将来自 `eno1` 的流量通过 `wlp1s0` 进行 NAT。
+2. 允许双向流量转发。
+
+步骤 4：验证配置
+1. 检查 eno1 的 IP：
+   ```bash
+   ifconfig eno1
+   ```
+   应显示 `inet 192.168.20.1`。
+
+2. 检查 IP 转发是否启用：
+   ```bash
+   cat /proc/sys/net/ipv4/ip_forward
+   ```
+   输出应为 `1`。
+
+3. 检查 iptables 规则：
+   ```bash
+   sudo iptables -t nat -L -v
+   sudo iptables -L -v
+   ```
+
+步骤 5（可选）：持久化配置
+如果希望配置永久生效：
+1. 永久启用 IP 转发：
+   ```bash
+   echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/99-ip-forward.conf
+   sudo sysctl -p
+   ```
+
+2. 保存 iptables 规则（依赖系统工具如 `iptables-persistent`）：
+   ```bash
+   sudo apt install iptables-persistent -y
+   sudo netfilter-persistent save
+   ```
+
 
 ## 二、将虚拟网络连接至以太网
 

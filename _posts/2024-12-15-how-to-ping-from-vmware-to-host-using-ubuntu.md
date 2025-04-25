@@ -166,7 +166,7 @@ end0      Link encap:Ethernet  HWaddr 10:E7:7A:E3:E0:F5
 编辑配置文件
 
 ```shell
-root@stm32mp2-e3-e0-f5:/etc/network# vi /etc/systemd/network/10-end0.network
+vi /etc/systemd/network/10-end0.network
 ```
 
 填入以下内容
